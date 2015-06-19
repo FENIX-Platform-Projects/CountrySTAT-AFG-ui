@@ -14,14 +14,14 @@
     "subject": "item"
   },
   {
-    "val": "CountrySTAT commodityList",
+    "val": "CountrySTAT_commodityList",
     "text": {
       "EN": "CountrySTAT Commodity List"
     },
     "subject": "item"
   },
   {
-    "val": "CountrySTAT Labour",
+    "val": "CountrySTAT_Labour",
     "text": {
       "EN": "CountrySTAT Labour"
     },
