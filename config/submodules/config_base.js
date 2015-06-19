@@ -12,7 +12,6 @@ define([], function () {
         //SERVICE_BASE_ADDRESS: "http://fenix.fao.org/d3s_dev/msd"
         //demo
         SERVICE_BASE_ADDRESS: "http://fenix.fao.org/d3s/msd",
-        CATALOG_BLANK_FILTER: 'config/submodules/catalog/afg-catalog-blank-filter.json',
         DSD_EDITOR_CODELISTS: "config/submodules/DSDEditor/CodelistsCstatAFG.json",
     };
 
