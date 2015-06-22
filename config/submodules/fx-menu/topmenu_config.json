@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "attrs": {
+        "id": "analysis"
+      },
+      "target": "analysis.html",
+      "label": {
+        "EN": "Search and Visualize",
+        "FR": "PI"
+      }
+    },
+    {
+      "attrs": {
+        "id": "createdataset"
+      },
+      "target": "createdataset.html",
+      "label": {
+        "EN": "Data Management",
+        "FR": "PI"
+      }
+    },
+    {
+      "attrs": {
+        "id": "modules"
+      },
+      "target": "modules.html",
+      "label": {
+        "EN": "Thematic modules",
+        "FR": "PI"
+      }
+    }
+  ],
+
+  "type": "fixed-top",
+
+  "brand": {
+    "target": "index.html"
+  },
+
+  "languages": [ ]
+}
