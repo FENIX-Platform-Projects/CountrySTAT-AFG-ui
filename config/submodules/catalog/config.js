@@ -1,17 +1,22 @@
 /*global define*/
-define([], function () {
+define(['jquery', 'fx-submodules/config/baseConfig'],
+    function ($, config_base) {
 
-    'use strict';
+        'use strict';
 
-    //Use the following example to override properties:
-    //services.SERVICES_BASE_ADDRESS = "http://fenix.fao.org/d3s_dev2/msd";
+        //Use the following example to override properties:
+        //services.SERVICE_BASE_ADDRESS = "http://fenix.fao.org/d3s_dev2/msd";
 
-    var services = {
+        /*var services = {
+    
+            //SERVICE_BASE_ADDRESS : 'http://fenix.fao.org/d3s_fenix/msd'
+            SERVICE_BASE_ADDRESS: 'http://fenix.fao.org/d3s_dev/msd'
+    
+        };*/
+        var services = {};
+        $.extend(services, config_base);
 
-        SERVICES_BASE_ADDRESS : 'http://fenix.fao.org/d3s_fenix/msd',
-        CATALOG_BLANK_FILTER : 'config/submodules/catalog/afg-catalog-blank-filter.json'
+        services.CATALOG_BLANK_FILTER = 'config/submodules/catalog/afg-catalog-blank-filter.json';
 
-        };
-
-    return services;
-});
+        return services;
+    });
