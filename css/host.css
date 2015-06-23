@@ -1650,14 +1650,14 @@ input[type="checkbox"]:checked + label {
   color: #666666;
   text-shadow: none;
   border-color: transparent;
-  background-color: #d9eeff;
-  background-image: -moz-linear-gradient(top, #d9eeff, #d9eeff);
-  background-image: -ms-linear-gradient(top, #d9eeff, #d9eeff);
-  background-image: -o-linear-gradient(top, #d9eeff, #d9eeff);
-  background-image: -webkit-gradient(linear, center top, center bottom, from(#d9eeff), to(#d9eeff));
-  background-image: -webkit-linear-gradient(top, #d9eeff, #d9eeff);
-  background-image: linear-gradient(top, #d9eeff, #d9eeff);
-  background-image: linear-gradient(to bottom, #d9eeff, #d9eeff);
+  background-color: #ffd1bd;
+  background-image: -moz-linear-gradient(top, #ffd1bd, #ffd1bd);
+  background-image: -ms-linear-gradient(top, #ffd1bd, #ffd1bd);
+  background-image: -o-linear-gradient(top, #ffd1bd, #ffd1bd);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#ffd1bd), to(#ffd1bd));
+  background-image: -webkit-linear-gradient(top, #ffd1bd, #ffd1bd);
+  background-image: linear-gradient(top, #ffd1bd, #ffd1bd);
+  background-image: linear-gradient(to bottom, #ffd1bd, #ffd1bd);
   -moz-background-clip: padding;
   background-clip: padding-box;
   -webkit-background-clip: padding-box;
@@ -1724,14 +1724,14 @@ input[type="checkbox"]:checked + label {
   color: #666666;
   text-shadow: none;
   border-color: transparent;
-  background-color: #d9eeff;
-  background-image: -moz-linear-gradient(top, #d9eeff, #d9eeff);
-  background-image: -ms-linear-gradient(top, #d9eeff, #d9eeff);
-  background-image: -o-linear-gradient(top, #d9eeff, #d9eeff);
-  background-image: -webkit-gradient(linear, center top, center bottom, from(#d9eeff), to(#d9eeff));
-  background-image: -webkit-linear-gradient(top, #d9eeff, #d9eeff);
-  background-image: linear-gradient(top, #d9eeff, #d9eeff);
-  background-image: linear-gradient(to bottom, #d9eeff, #d9eeff);
+  background-color: #ffd1bd;
+  background-image: -moz-linear-gradient(top, #ffd1bd, #ffd1bd);
+  background-image: -ms-linear-gradient(top, #ffd1bd, #ffd1bd);
+  background-image: -o-linear-gradient(top, #ffd1bd, #ffd1bd);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#ffd1bd), to(#ffd1bd));
+  background-image: -webkit-linear-gradient(top, #ffd1bd, #ffd1bd);
+  background-image: linear-gradient(top, #ffd1bd, #ffd1bd);
+  background-image: linear-gradient(to bottom, #ffd1bd, #ffd1bd);
   -moz-background-clip: padding;
   background-clip: padding-box;
   -webkit-background-clip: padding-box;
@@ -1740,15 +1740,15 @@ input[type="checkbox"]:checked + label {
 .jqx-fill-state-pressed, .jqx-widget .jqx-grid-cell-selected {
   color: #666666;
   text-shadow: none;
-  border-color: #d9eeff;
-  background-color: #d9eeff;
-  background-image: -moz-linear-gradient(top, #d9eeff, #d9eeff);
-  background-image: -ms-linear-gradient(top, #d9eeff, #d9eeff);
-  background-image: -o-linear-gradient(top, #d9eeff, #d9eeff);
-  background-image: -webkit-gradient(linear, center top, center bottom, from(#d9eeff), to(#d9eeff));
-  background-image: -webkit-linear-gradient(top, #d9eeff, #d9eeff);
-  background-image: linear-gradient(top, #d9eeff, #d9eeff);
-  background-image: linear-gradient(to bottom, #d9eeff, #d9eeff);
+  border-color: #fff5f0;
+  background-color: #fff5f0;
+  background-image: -moz-linear-gradient(top, #fff5f0, #fff5f0);
+  background-image: -ms-linear-gradient(top, #fff5f0, #fff5f0);
+  background-image: -o-linear-gradient(top, #fff5f0, #fff5f0);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#fff5f0), to(#fff5f0));
+  background-image: -webkit-linear-gradient(top, #fff5f0, #fff5f0);
+  background-image: linear-gradient(top, #fff5f0, #fff5f0);
+  background-image: linear-gradient(to bottom, #fff5f0, #fff5f0);
   -moz-background-clip: padding;
   background-clip: padding-box;
   -webkit-background-clip: padding-box;
@@ -2053,11 +2053,11 @@ input[type="checkbox"]:checked + label {
 
 .jstree-default .jstree-wholerow-clicked {
   background: none;
-  background-color: #d9eeff; }
+  background-color: #fff5f0; }
 
 .jstree-default .jstree-wholerow-hovered {
   background: none;
-  background-color: #d9eeff; }
+  background-color: #ffd1bd; }
 
 /* Packery _ Fenix */
 /* clearfix */
