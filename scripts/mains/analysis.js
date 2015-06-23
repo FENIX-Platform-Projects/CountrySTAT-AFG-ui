@@ -62,8 +62,11 @@ require([
                 'host/config' : '../../config/config',
 
                 //Components configuration
+                "fx-cat-br/config/fx-catalog-blank-filter": '../../config/submodules/catalog/blankFilter',
 
-                'fx-ana/config/services' : '../../config/submodules/analysis/services'
+
+                    'fx-ana/config/services' : '../../config/submodules/analysis/services',
+                'fx-filter/config/config-default' : '../../config/submodules/filter/config'
 
             },
 

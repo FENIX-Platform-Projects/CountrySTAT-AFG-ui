@@ -64,6 +64,10 @@ define([
 
             container: document.querySelector(s.CATALOG_CONTAINER),
 
+            catalog: {
+                BLANK_FILTER: C.CATALOG_BLANK_FILTER
+            },
+
             results: {
                 actions: {
                     SELECT_RESOURCE: {
