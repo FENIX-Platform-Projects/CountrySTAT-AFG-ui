@@ -20,7 +20,9 @@ define(['jquery', 'fx-submodules/config/baseConfig'],
         $.extend(cfg, config_base);
 
         cfg.TOP_MENU = {
-            url: 'json/fenix-ui-topmenu_config.json',
+            url: './config/submodules/fx-menu/topmenu_config.json',
+            container: '#sidebar-wrapper',
+            template: 'fx-menu/templates/side.html',
             active: "createdataset"
         };
 

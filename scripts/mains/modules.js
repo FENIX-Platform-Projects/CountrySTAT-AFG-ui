@@ -19,7 +19,7 @@ require([
 
                 // Specify the paths of vendor libraries
                 paths: {
-                    host: '../index/host',
+                    host: '../modules/host',
                     underscore: "{FENIX_CDN}/js/underscore/1.7.0/underscore.min",
                     handlebars: "{FENIX_CDN}/js/handlebars/2.0.0/handlebars",
                     amplify: '{FENIX_CDN}/js/amplify/1.1.2/amplify.min',

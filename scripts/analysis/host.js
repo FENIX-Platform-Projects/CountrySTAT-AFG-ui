@@ -32,6 +32,11 @@ define([
     Host.prototype.initPage = function () {
         $(s.OVERLAY_CONTENT).hide();
         $(s.OVERLAY).hide();
+
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
     };
 
     Host.prototype.start = function () {
@@ -42,7 +47,9 @@ define([
 
          this.topmenu = new Menu({
              url: C.TOP_MENU,
-             active: "analysis"
+             active: "analysis",
+             container: '#sidebar-wrapper',
+             template: 'fx-menu/templates/side.html'
          });
 
         this.analysis = new Analysis({
@@ -92,6 +99,8 @@ define([
     };
 
     Host.prototype.openOverly = function () {
+
+        $("#wrapper").addClass("toggled");
 
         $(s.OVERLAY).show();
 

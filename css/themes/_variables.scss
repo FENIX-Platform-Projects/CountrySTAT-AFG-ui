@@ -1,7 +1,9 @@
 // Uneca - Variables
 
+$fx-ui-common: '../submodules/fenix-ui-common/css/';
+
 // Layout
-$host-menu-height : 50px;
+$host-menu-height : 0;
 
 // Typography
 $small-text : 12px;
@@ -20,7 +22,8 @@ $fx-text-smalltitle-bold: normal normal 700 12px/normal 'Roboto';
 
 // Fenix Colors
 $fenix-standard-blue: rgba(53, 166, 220, 1);
-$fx-cool-blue:  #005295;
+$fx-cool-blue:  #ff8a57;
+
 $fx-secondary-color: desaturate( $fx-cool-blue, 50% );
 
 $fx-main-color-light: #d9eeff/*lighten( $fx-cool-blue, 40%)*/; // Ideal for selection

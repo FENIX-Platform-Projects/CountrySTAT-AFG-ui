@@ -1,16 +1,17 @@
 /* Uneca Theme */
+$fx-ui-common: '../submodules/fenix-ui-common/css/';
 
-@import 'themes/uneca-variables';
+@import 'themes/variables';
 
 /* Fenix Utils*/
-
 @import '../submodules/fenix-ui-common/css/fenix-style-no-variables';
 
 /* Pages */
-@import 'pages/uneca-home';
-@import 'pages/uneca-analysis';
-@import 'pages/uneca-iframes';
-@import 'pages/uneca-datamanagement';
+@import 'pages/analysis';
+@import 'pages/datamanagement';
+@import 'pages/home';
 
 /* Theme */
-@import 'themes/uneca-theme';
+@import 'themes/theme';
+
+

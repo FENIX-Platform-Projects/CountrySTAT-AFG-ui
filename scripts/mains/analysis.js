@@ -58,6 +58,8 @@ require([
             paths: {
                 host: '../analysis/host',
                 underscore: "{FENIX_CDN}/js/underscore/1.7.0/underscore.min",
+                'packery': '../lib/packery.1.4.1.min',
+
 
                 'host/config' : '../../config/config',
 

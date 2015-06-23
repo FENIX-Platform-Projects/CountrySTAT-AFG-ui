@@ -11,8 +11,26 @@ define([
 
     Host.prototype.initFenixComponent = function () {
 
+        this.initPageStructure();
+
+
         this.topMenu = new TopMenu({
-            url: C.TOP_MENU
+            url: C.TOP_MENU,
+            active: 'home',
+            container: '#sidebar-wrapper',
+            template: 'fx-menu/templates/side.html'
+        });
+
+    };
+
+    Host.prototype.initPageStructure = function () {
+
+
+        <!-- Menu Toggle Script -->
+
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
         });
 
     };

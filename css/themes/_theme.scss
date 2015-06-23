@@ -82,34 +82,16 @@ Using the normal root/css/host.css, is impossible to override the logo without "
 }
 
 
+  div[data-plugin="filter"]{
+    .fx-catalog-modular-form-content{
+      height: 240px !important;
+
+      .jstree-holder {
+        height: 187px;
+      }
+
+    }
 
 
-/* //////////////////// THEMING ///////////////////// */
+  }
 
-
-/*///////////////* ANALYSIS */
-
-/*  CATALOG THEMING */
-
-#fx-catalog-submit-btn{
-
-}
-
-.fx-catalog-resume-title{
-
-}
-
-.fx-resume-item-selected .fx-resume-module-title em{  }
-
-
-/*///////////////* DATA EDIT */
-
-#metadataEditorContainer #fx-editor-form .panel-heading{
-
-}
-
-#metadataEditorContainer #fx-editor-form .btn-success{
-
-}
-
-#metadataEditorContainer .panel-title{  }

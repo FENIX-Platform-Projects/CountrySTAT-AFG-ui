@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>FENIX - Analysis</title>
+    <title>FENIX Analysis</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
     <meta name="description" content="FENIX Analysis Interface">
     <meta name="author" content="Daniele Salvatore <daniele.salvatore[at]fao.org>">
     <meta name="author" content="Nicola Selleri <nicola.selleri[at]fao.org>">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Third Party CSS -->
-    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/bootstrap/3.2/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href='//fenixapps.fao.org/repository/js/jqwidgets/3.1/styles/jqx.base.css'/>
     <link rel="stylesheet" href='//fenixapps.fao.org/repository/js/pnotify/2.0.1/pnotify.core.css'/>
     <link rel="stylesheet" href='//fenixapps.fao.org/repository/js/introjs/1.0.0/introjs.css'/>
     <link rel="stylesheet" href='//fenixapps.fao.org/repository/js/nprogress/0.1.6/nprogress.css'/>
     <link rel="stylesheet" href='//fenixapps.fao.org/repository/js/jquery.mb.extruder/2.5.5/css/mbExtruder.css'>
     <link rel="stylesheet" href='//fenixapps.fao.org/repository/js/jstree/3.0.8/dist/themes/default/style.min.css'>
-    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/leaflet/0.7.3/leaflet.css" />
-    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/jquery.power.tip/1.2.0/css/jquery.powertip.css" type="text/css" />
-    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/jquery-ui/1.10.3/jquery-ui-1.10.3.custom.min.css" />
-    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/select2/3.5.2/css/select2.css" />
-    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/fenix-ui-map/0.0.1/fenix-ui-map.min.css" />
+    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/leaflet/0.7.3/leaflet.css"/>
+    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/jquery.power.tip/1.2.0/css/jquery.powertip.css"
+          type="text/css"/>
+    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/jquery-ui/1.10.3/jquery-ui-1.10.3.custom.min.css"/>
+    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/select2/3.5.2/css/select2.css"/>
+    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/fenix-ui-map/0.0.1/fenix-ui-map.min.css"/>
 
     <link href='http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
     <link href='https://cdnjs.cloudflare.com/ajax/libs/sweetalert/0.5.0/sweet-alert.css' rel='stylesheet'>
 
-    <!-- FENIX CSS-->
-    <link rel="stylesheet" href="submodules/fenix-ui-common/css/fenix-style.css">
+    <!--&lt;!&ndash; FENIX CSS&ndash;&gt;-->
+    <!--<link rel="stylesheet" href="submodules/fenix-ui-common/css/fenix-style.css">-->
     <link rel="stylesheet" href='submodules/fenix-ui-catalog/css/fenix-ui-catalog.css'/>
-    <link rel="stylesheet" href='submodules/fenix-ui-analysis/css/host.css'/>
+    <!--<link rel="stylesheet" href='submodules/fenix-ui-analysis/css/host.css'/>-->
 
     <link rel="stylesheet" href='css/host.css'/>
 
@@ -45,51 +44,77 @@
 </head>
 <body>
 
-<div class="container">
+<div id="wrapper">
 
-    <!-- header -->
-    <div class="row fx-header">
-        <div class="col-xs-12">
-            <div class="page-header">
-                <h1>Data Analysis
-                    <small> FENIX</small>
-                </h1>
-                <p>Analysis of data is a process of inspecting, cleaning, transforming, and modeling data with the goal
-                    of discovering useful information, suggesting conclusions, and supporting decision making.</p>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper"></div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    <button type="button" class="btn btn-default open-overlay">OPEN CATALOG</button>
+
+                    <div class="container-fluid">
+
+                        <!-- header -->
+                        <div class="row fx-header">
+                            <div class="col-xs-12">
+                                <div class="page-header">
+                                    <h1>Data Analysis
+                                        <small> FENIX</small>
+                                    </h1>
+                                    <p>Analysis of data is a process of inspecting, cleaning, transforming, and modeling
+                                        data with the goal
+                                        of discovering useful information, suggesting conclusions, and supporting
+                                        decision making.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Open catalog btn and modules stack container-->
+                        <div class="row fx-catalog-toolbar">
+
+                            <div class="col-xs-6">
+
+                            </div>
+
+                            <div id='fx-modules-stack-container' class="col-xs-6"></div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div id="fx-analysis-container"></div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!-- footer -->
+                        <footer>
+                            <p class="pull-right"><a href="#">Back to top</a></p>
+
+                            <p>2015 FENIX · <a href="#">Terms</a></p>
+                        </footer>
+
+                    </div>
+
+
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- Open catalog btn and modules stack container-->
-    <div class="row fx-catalog-toolbar">
-
-        <div class="col-xs-6">
-            <button type="button" class="btn btn-default open-overlay">OPEN CATALOG</button>
-        </div>
-
-        <div id='fx-modules-stack-container' class="col-xs-6"></div>
-
-    </div>
-
-    <div class="row">
-        <div class="col-xs-12">
-            <div id="fx-analysis-container"></div>
-        </div>
-    </div>
-
-    <hr>
-
-    <!-- footer -->
-    <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-
-        <p>2015 FENIX · <a href="#">Terms</a></p>
-    </footer>
+    <!-- /#page-content-wrapper -->
 
 </div>
+<!-- /#wrapper -->
 
 <!-- catalog overlay -->
-<div id="overlay" class="container">
+<div id="overlay" class="container-fluid">
 
     <button class="close-overlay"></button>
 
