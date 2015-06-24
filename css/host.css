@@ -5202,7 +5202,7 @@ button_new_2:before {
 
 /* Fenix Typography */
 body {
-  color: #666666;
+  color: #333333;
   font: normal normal 300 14px/normal "Roboto Condensed"; }
 
 a {
@@ -5214,7 +5214,7 @@ a {
 
 .dropdown-menu > li > a {
   font-weight: 300;
-  color: #666666; }
+  color: #333333; }
 
 h1 {
   font: normal normal 100 36px/normal "Roboto";
@@ -5285,16 +5285,16 @@ input[type="button"]::-moz-focus-inner {
 
 .fx-button-reset {
   background-color: transparent;
-  color: #666666;
+  color: #333333;
   border-color: transparent;
   font: normal normal 300 14px/normal "Roboto Condensed"; }
   .fx-button-reset:hover {
     background-color: transparent;
-    color: #666666;
+    color: #333333;
     border-color: transparent; }
   .fx-button-reset:active {
     background-color: transparent;
-    color: #666666;
+    color: #333333;
     border-color: transparent;
     -webkit-box-shadow: 0 0 0 white;
     -moz-box-shadow: 0 0 0 white;
@@ -5447,7 +5447,7 @@ label {
 
 /* Fenix - Legend Component */
 legend {
-  color: #666666;
+  color: #333333;
   cursor: pointer;
   border: 0;
   font-size: 12px; }
@@ -5544,7 +5544,7 @@ div[data-module="region"] .fx-catalog-modular-form-content {
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
   background-color: transparent;
-  color: #666666; }
+  color: #333333; }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #ff8a57; }
@@ -5610,7 +5610,7 @@ div[data-module="region"] .fx-catalog-modular-form-content {
     .panel-group .panel-heading .panel-title {
       font: normal normal 300 16px/normal "Roboto Condensed"; }
       .panel-group .panel-heading .panel-title a {
-        color: #666666;
+        color: #333333;
         text-transform: uppercase; }
         .panel-group .panel-heading .panel-title a:hover {
           text-decoration: none; }
@@ -5622,18 +5622,18 @@ div[data-module="region"] .fx-catalog-modular-form-content {
     color: #ff8a57; }
   .panel-group .panel-body .btn {
     background-color: transparent;
-    color: #666666;
+    color: #333333;
     border-color: transparent;
     font: normal normal 300 14px/normal "Roboto Condensed";
     text-align: left;
     position: relative; }
     .panel-group .panel-body .btn:hover {
       background-color: transparent;
-      color: #666666;
+      color: #333333;
       border-color: transparent; }
     .panel-group .panel-body .btn:active {
       background-color: transparent;
-      color: #666666;
+      color: #333333;
       border-color: transparent;
       -webkit-box-shadow: 0 0 0 white;
       -moz-box-shadow: 0 0 0 white;
@@ -5874,7 +5874,7 @@ input[type="checkbox"]:checked + label {
   position: relative; }
 
 .nav-pills li a {
-  color: #666666; }
+  color: #333333; }
 
 .navbar-brand {
   background-image: url("img/fenix-ico.svg");
@@ -5905,7 +5905,7 @@ input[type="checkbox"]:checked + label {
   margin-top: 20px; }
 
 .bs-docs-sidebar .nav > li > a {
-  color: #666666;
+  color: #333333;
   display: block;
   padding: 4px 20px;
   cursor: pointer;
@@ -6082,7 +6082,7 @@ input[type="checkbox"]:checked + label {
       padding: 3px 3px 6px 3px;
       border-color: transparent;
       cursor: pointer;
-      color: #666666; }
+      color: #333333; }
       .fx-widget .nav-tabs > li > a:hover, .fx-widget .nav-tabs > li > a:active, .fx-widget .nav-tabs > li > a:focus, .fx-widget .nav-tabs > li > a:visited {
         border-color: transparent;
         background-color: transparent;
@@ -6194,7 +6194,7 @@ input[type="checkbox"]:checked + label {
 .extruder {
   position: fixed;
   cursor: default;
-  color: #666666; }
+  color: #333333; }
 
 .extruder .content {
   display: none; }
@@ -6327,13 +6327,13 @@ input[type="checkbox"]:checked + label {
   font: normal normal 300 14px/normal "Roboto Condensed"; }
 
 .jqx-widget-content {
-  color: #666666;
+  color: #333333;
   text-shadow: none;
   border-color: #d8d8d8;
   background: white; }
 
 .jqx-widget-header, .jqx-grid .jqx-widget-header {
-  color: #666666;
+  color: #333333;
   text-shadow: none;
   border-color: transparent;
   background-color: #ffd1bd;
@@ -6359,7 +6359,7 @@ input[type="checkbox"]:checked + label {
   font-size: 12px; }
 
 .jqx-fill-state-normal {
-  color: #666666;
+  color: #333333;
   text-shadow: none;
   border-color: transparent;
   background-color: transparent;
@@ -6376,7 +6376,7 @@ input[type="checkbox"]:checked + label {
   background-repeat: no-repeat; }
 
 .jqx-button {
-  color: #666666;
+  color: #333333;
   text-shadow: none;
   border-color: transparent;
   background-color: transparent;
@@ -6398,16 +6398,16 @@ input[type="checkbox"]:checked + label {
 
 .jqx-widget .jqx-grid-cell-sort, .jqx-widget .jqx-grid-cell-filter, .jqx-widget .jqx-grid-cell-pinned, .jqx-grid-cell-sort, .jqx-grid-cell-filter, .jqx-grid-cell-pinned {
   background-color: #999999;
-  color: #666666;
+  color: #333333;
   text-shadow: none; }
 
 .jqx-widget .jqx-grid-cell-alt, .jqx-widget .jqx-grid-cell-sort-alt, .jqx-widget .jqx-grid-cell-pinned-alt, .jqx-widget .jqx-grid-cell-filter-alt, .jqx-grid-cell-alt, .jqx-grid-cell-sort-alt, .jqx-grid-cell-filter-alt {
   background-color: white;
-  color: #666666;
+  color: #333333;
   text-shadow: none; }
 
 .jqx-fill-state-hover, .jqx-widget .jqx-grid-cell-hover {
-  color: #666666;
+  color: #333333;
   text-shadow: none;
   border-color: transparent;
   background-color: #ffd1bd;
@@ -6424,7 +6424,7 @@ input[type="checkbox"]:checked + label {
   background-repeat: no-repeat; }
 
 .jqx-fill-state-pressed, .jqx-widget .jqx-grid-cell-selected {
-  color: #666666;
+  color: #333333;
   text-shadow: none;
   border-color: #fff5f0;
   background-color: #fff5f0;
@@ -6441,9 +6441,9 @@ input[type="checkbox"]:checked + label {
   background-repeat: no-repeat; }
 
 .jqx-switchbutton-label-on {
-  color: #666666;
+  color: #333333;
   text-shadow: none;
-  border-color: #666666;
+  border-color: #333333;
   background-color: #dddddd;
   background-image: -moz-linear-gradient(top, #dddddd, #dddddd);
   background-image: -ms-linear-gradient(top, #dddddd, #dddddd);
@@ -6458,7 +6458,7 @@ input[type="checkbox"]:checked + label {
   background-repeat: no-repeat; }
 
 .jqx-tabs-title-selected-top, .jqx-tabs-selection-tracker-top {
-  color: #666666;
+  color: #333333;
   text-shadow: none;
   border-color: #d8d8d8;
   border-bottom: 1px solid white;
@@ -6466,7 +6466,7 @@ input[type="checkbox"]:checked + label {
   background-color: white; }
 
 .jqx-tabs-title-selected-bottom, .jqx-tabs-selection-tracker-bottom {
-  color: #666666;
+  color: #333333;
   text-shadow: none;
   border-color: #d8d8d8;
   border-top: 1px solid white;
@@ -6617,7 +6617,7 @@ input[type="checkbox"]:checked + label {
   background-repeat: no-repeat; }
 
 .jqx-radiobutton-check-checked {
-  background: #666666;
+  background: #333333;
   width: 7px;
   height: 7px;
   margin-left: 2px;
@@ -6694,38 +6694,38 @@ input[type="checkbox"]:checked + label {
   border-color: #e5e5e5; }
 
 .jqx-tooltip, .jqx-tooltip-main {
-  color: #666666;
+  color: #333333;
   text-shadow: none;
   border-color: #aaa;
   background-color: #dddddd; }
 
 .jqx-combobox-content, .jqx-input {
-  color: #666666;
+  color: #333333;
   text-shadow: none;
   border-color: #d8d8d8;
   background-color: white; }
 
 .jqx-combobox-input {
-  color: #666666;
+  color: #333333;
   text-shadow: none; }
 
 .jqx-input-content {
-  color: #666666;
+  color: #333333;
   text-shadow: none;
   background-color: white; }
 
 .jqx-fill-state-focus, .jqx-popup .jqx-fill-state-focus {
-  border-color: #666666; }
+  border-color: #333333; }
 
 .jqx-popup.jqx-listbox, .jqx-popup.jqx-calendar, .jqx-menu-dropdown, .jqx-popup.jqx-dropdownbutton-popup {
-  color: #666666;
+  color: #333333;
   text-shadow: none;
-  border-color: #666666;
+  border-color: #333333;
   background-color: white; }
 
 /* Fenix - Js tree */
 .jstree-default .jstree-search {
-  color: #666666;
+  color: #333333;
   font-weight: 300;
   font-style: normal; }
 
@@ -6827,7 +6827,7 @@ input[type="checkbox"]:checked + label {
       transform: translateY(-40%); }
       .uneca-datamng-welcome .uneca-datamng-welcome-btn a span:first-child {
         font-size: 30px;
-        color: #666666; }
+        color: #333333; }
       .uneca-datamng-welcome .uneca-datamng-welcome-btn a span:last-child {
         text-transform: uppercase;
         font-size: 12px; }
@@ -6856,6 +6856,14 @@ input[type="checkbox"]:checked + label {
     width: 100%; }
 
 /* Afghanistan Home */
+.country-welcome {
+  background-color: #f0e352; }
+
+.country-details {
+  background-image: url(img/afg-home-bg.jpg);
+  background-size: cover;
+  background-position: 50% 50%; }
+
 /* Components */
 /* vertical alignment styles */
 .col-top {
@@ -7098,7 +7106,7 @@ div[data-plugin="filter"] .fx-catalog-modular-form-content {
     border-bottom: none;
     border-left: none;
     border: none;
-    color: #666666;
+    color: #333333;
     font-size: 40px;
     padding: 0; }
 
