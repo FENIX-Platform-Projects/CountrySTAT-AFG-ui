@@ -1,47 +1,88 @@
 {
   "items": [
+  {
+    "attrs": {
+      "id": "home"
+    },
+    "target": "index.html",
+    "label": {
+      "EN": "Home",
+      "FR": "PI"
+    }
+  },
+  {
+    "attrs": {
+      "id": "analysis"
+    },
+    "target": "analysis.html",
+    "label": {
+      "EN": "Search and Visualize",
+      "FR": "PI"
+    }
+  },
+  {
+    "attrs": {
+      "id": "createdataset"
+    },
+    "target": "createdataset.html",
+    "label": {
+      "EN": "Data Management",
+      "FR": "PI"
+    }
+  },
+  {
+    "attrs": {
+      "id": "modules"
+    },
+    "target": "modules.html",
+    "label": {
+      "EN": "Thematic modules",
+      "FR": "PI"
+    }
+  }
+],
+  "rightItems": [
     {
       "attrs": {
-        "id": "home"
+        "id": "keys"
       },
-      "target": "index.html",
+      "target": "#",
       "label": {
-        "EN": "Home",
+        "EN": "Key indicators",
         "FR": "PI"
       }
     },
     {
       "attrs": {
-        "id": "analysis"
+        "id": "news"
       },
-      "target": "analysis.html",
+      "target": "#",
       "label": {
-        "EN": "Search and Visualize",
+        "EN": "News",
         "FR": "PI"
       }
     },
     {
       "attrs": {
-        "id": "createdataset"
+        "id": "documents"
       },
-      "target": "createdataset.html",
+      "target": "#",
       "label": {
-        "EN": "Data Management",
+        "EN": "Documents",
         "FR": "PI"
       }
     },
     {
       "attrs": {
-        "id": "modules"
+        "id": "links"
       },
-      "target": "modules.html",
+      "target": "#",
       "label": {
-        "EN": "Thematic modules",
+        "EN": "Links",
         "FR": "PI"
       }
     }
   ],
-
   "type": "sidemenu",
 
   "brand": {

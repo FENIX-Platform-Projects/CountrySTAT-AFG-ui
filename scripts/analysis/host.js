@@ -100,7 +100,7 @@ define([
 
     Host.prototype.openOverly = function () {
 
-        $("#wrapper").addClass("toggled");
+        //$("#wrapper").addClass("toggled");
 
         $(s.OVERLAY).show();
 
