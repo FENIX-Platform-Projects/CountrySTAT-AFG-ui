@@ -11,3 +11,25 @@
   background-size: cover;
   background-position: 50% 50%;
 }
+
+.afg-home-stats{
+  height: 65px;
+  width: 65px;
+}
+
+.progressbar-text{
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 23px;
+  color: white !important;
+
+  &:after{
+    content: '%';
+    position: relative;
+    right: -2px;
+    font-size: 16px;
+    top: -5px;
+
+  }
+
+}

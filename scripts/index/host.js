@@ -42,26 +42,11 @@ define([
 
     Host.prototype.initPercentageAnimations = function () {
 
-        var circle = new ProgressBar.Circle(s.PERCENTAGE_ONE, {
-            color: '#FCB03C',
-            strokeWidth: 3,
-            trailWidth: 1,
-            duration: 1500,
-            easing : 'easeIn',
-            text: {
-                value: '0'
-            },
-            step: function(state, bar) {
-                bar.setText((bar.value() * 100).toFixed(0));
-            }
-        });
-
-        circle.animate(0.56);
-
-        var circle_two = new ProgressBar.Circle(s.PERCENTAGE_TWO, {
-            color: '#FCB03C',
-            strokeWidth: 3,
-            trailWidth: 1,
+        var c ={
+            color: '#f0e352',
+            strokeWidth: 10,
+            trailWidth: 9,
+            trailColor: "rgba(255,255,255,0.2)",
             duration: 1500,
             easing : 'easeOut',
             text: {
@@ -70,9 +55,15 @@ define([
             step: function(state, bar) {
                 bar.setText((bar.value() * 100).toFixed(0));
             }
-        });
+        }
 
-        circle_two.animate(0.92);
+        var circle = new ProgressBar.Circle(s.PERCENTAGE_ONE, c);
+
+        circle.animate(0.58);
+
+        var circle_two = new ProgressBar.Circle(s.PERCENTAGE_TWO, c);
+
+        circle_two.animate(0.42);
 
     };
 

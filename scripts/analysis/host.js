@@ -30,8 +30,7 @@ define([
     }
 
     Host.prototype.initPage = function () {
-        $(s.OVERLAY_CONTENT).hide();
-        $(s.OVERLAY).hide();
+
 
         $("#menu-toggle").click(function(e) {
             e.preventDefault();
@@ -92,37 +91,55 @@ define([
 
     Host.prototype.bindEventListener = function () {
 
-        $(s.OVERLAY_OPEN).on('click', _.bind(this.openOverly, this));
-        $(s.OVERLAY_CLOSE).on('click', _.bind(this.closeOverly, this));
+        var self = this;
+
+        $(s.OVERLAY_OPEN).on('click', _.bind(this.toggleOverly, this));
+
+        $(s.OVERLAY).on('click', function (e){
+
+            console.log(e.target)
+            console.log(this)
+
+
+
+            if( e.target !== this )
+                return;
+
+            self.closeOverly();
+
+        });
 
         amplify.subscribe('fx.widget.catalog.select', _.bind(this.closeOverly, this));
     };
 
+
+    Host.prototype.toggleOverly = function () {
+
+        this.overlayStatus === 'opened' ? this.closeOverly(): this.openOverly();
+
+    };
+
     Host.prototype.openOverly = function () {
+        this.overlayStatus = 'opened';
 
-        //$("#wrapper").addClass("toggled");
+        $(s.OVERLAY_OPEN).find('img').attr('src', 'css/icons/close-ico.svg');
 
-        $(s.OVERLAY).show();
+        $(s.OVERLAY).addClass('show');
 
-        $(s.OVERLAY).css({
-            height: '100%',
-            width: '100%'
-        });
-
-        $(s.OVERLAY_CONTENT).fadeIn('fast', function (){
-            $(window).trigger('resize');
-        });
+        $(window).trigger('resize');
 
     };
 
     Host.prototype.closeOverly = function () {
 
-        $(s.OVERLAY_CONTENT).fadeOut("fast", function () {
+        this.overlayStatus = 'closed';
 
-            $(s.OVERLAY_CONTENT).hide();
+        $(s.OVERLAY_OPEN).find('img').attr('src', 'css/icons/catalog-ico.svg');
 
-            $(s.OVERLAY).hide();
-        });
+        $(s.OVERLAY).removeClass('show');
+
+        $(window).trigger('resize');
+
     };
 
     return Host;

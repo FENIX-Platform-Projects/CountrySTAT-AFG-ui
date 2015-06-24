@@ -5203,7 +5203,7 @@ button_new_2:before {
 /* Fenix Typography */
 body {
   color: #333333;
-  font: normal normal 300 14px/normal "Roboto Condensed"; }
+  font: normal normal 300 14px/normal "Roboto"; }
 
 a {
   color: #ff8a57; }
@@ -5270,7 +5270,7 @@ input[type="button"]::-moz-focus-inner {
   background-color: #ff8a57;
   color: white;
   border-color: transparent;
-  font: normal normal 300 14px/normal "Roboto Condensed"; }
+  font: normal normal 300 14px/normal "Roboto"; }
   .btn:hover {
     background-color: transparent;
     color: #ff8a57;
@@ -5287,7 +5287,7 @@ input[type="button"]::-moz-focus-inner {
   background-color: transparent;
   color: #333333;
   border-color: transparent;
-  font: normal normal 300 14px/normal "Roboto Condensed"; }
+  font: normal normal 300 14px/normal "Roboto"; }
   .fx-button-reset:hover {
     background-color: transparent;
     color: #333333;
@@ -5443,7 +5443,7 @@ input[type=text]::-ms-clear {
 
 /* Fenix - Labels Component */
 label {
-  font: normal normal 300 14px/normal "Roboto Condensed"; }
+  font: normal normal 300 14px/normal "Roboto"; }
 
 /* Fenix - Legend Component */
 legend {
@@ -5624,7 +5624,7 @@ div[data-module="region"] .fx-catalog-modular-form-content {
     background-color: transparent;
     color: #333333;
     border-color: transparent;
-    font: normal normal 300 14px/normal "Roboto Condensed";
+    font: normal normal 300 14px/normal "Roboto";
     text-align: left;
     position: relative; }
     .panel-group .panel-body .btn:hover {
@@ -6324,7 +6324,7 @@ input[type="checkbox"]:checked + label {
 
 /* Fenix - JQwidgets */
 .jqx-widget {
-  font: normal normal 300 14px/normal "Roboto Condensed"; }
+  font: normal normal 300 14px/normal "Roboto"; }
 
 .jqx-widget-content {
   color: #333333;
@@ -6752,8 +6752,7 @@ input[type="checkbox"]:checked + label {
   display: block;
   clear: both; }
 
-.fx-analysis-item,
-.grid-sizer {
+.fx-analysis-item {
   width: 50%;
   height: 450px; }
 
@@ -6761,6 +6760,9 @@ input[type="checkbox"]:checked + label {
   height: 350px;
   overflow-y: auto;
   overflow-x: hidden; }
+
+.grid-sizer {
+  width: 50%; }
 
 /* Leaflet */
 /* Fenix Leaflet Import */
@@ -6863,6 +6865,22 @@ input[type="checkbox"]:checked + label {
   background-image: url(img/afg-home-bg.jpg);
   background-size: cover;
   background-position: 50% 50%; }
+
+.afg-home-stats {
+  height: 65px;
+  width: 65px; }
+
+.progressbar-text {
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 23px;
+  color: white !important; }
+  .progressbar-text:after {
+    content: '%';
+    position: relative;
+    right: -2px;
+    font-size: 16px;
+    top: -5px; }
 
 /* Components */
 /* vertical alignment styles */
@@ -6996,6 +7014,9 @@ input[type="checkbox"]:checked + label {
   transition: all 0.5s ease; }
 
 /* Base */
+html, body, #wrapper, #page-content-wrapper {
+  height: 100%; }
+
 body {
   background-color: white;
   padding-top: 0; }
@@ -7085,6 +7106,8 @@ div[data-plugin="filter"] .fx-catalog-modular-form-content {
 
 .page-content-toolbar {
   height: 50px;
+  background-color: white;
+  z-index: 501;
   position: relative; }
   .page-content-toolbar:after {
     content: '';
@@ -7112,6 +7135,50 @@ div[data-plugin="filter"] .fx-catalog-modular-form-content {
 
 .catalog-ico.img-responsive {
   position: relative;
-  position: relative;
   right: 20px;
   top: 8px; }
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  z-index: 500;
+  overflow-y: scroll;
+  background-color: transparent;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  #overlay .overlay-content {
+    width: 70%;
+    left: 50%;
+    position: relative;
+    -ms-transform: translate(-50%, -100%);
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+
+#overlay.show {
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+  pointer-events: auto; }
+  #overlay.show .overlay-content {
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
