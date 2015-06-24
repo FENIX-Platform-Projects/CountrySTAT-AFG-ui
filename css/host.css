@@ -5534,6 +5534,9 @@ div[data-module] .fx-catalog-modular-form-content {
 div[data-module="region"] .fx-catalog-modular-form-content {
   height: 263px; }
 
+div[data-module="referencePeriod"] .fx-catalog-modular-form-content {
+  height: 263px; }
+
 /* Fenix - Navigation Component */
 .navbar {
   border: 0;
@@ -7155,7 +7158,7 @@ div[data-plugin="filter"] .fx-catalog-modular-form-content {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
   #overlay .overlay-content {
-    width: 70%;
+    width: 85%;
     left: 50%;
     position: relative;
     -ms-transform: translate(-50%, -100%);
