@@ -47,7 +47,7 @@ define([
             strokeWidth: 3,
             trailWidth: 1,
             duration: 1500,
-            ease : 'easeIn',
+            easing : 'easeIn',
             text: {
                 value: '0'
             },
@@ -63,7 +63,7 @@ define([
             strokeWidth: 3,
             trailWidth: 1,
             duration: 1500,
-            ease : 'easeOut',
+            easing : 'easeOut',
             text: {
                 value: '0'
             },
