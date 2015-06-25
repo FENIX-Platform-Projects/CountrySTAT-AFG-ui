@@ -97,11 +97,6 @@ define([
 
         $(s.OVERLAY).on('click', function (e){
 
-            console.log(e.target)
-            console.log(this)
-
-
-
             if( e.target !== this )
                 return;
 

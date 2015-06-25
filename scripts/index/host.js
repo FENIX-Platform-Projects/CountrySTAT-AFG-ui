@@ -55,7 +55,7 @@ define([
             step: function(state, bar) {
                 bar.setText((bar.value() * 100).toFixed(0));
             }
-        }
+        };
 
         var circle = new ProgressBar.Circle(s.PERCENTAGE_ONE, c);
 
@@ -66,10 +66,6 @@ define([
         circle_two.animate(0.42);
 
     };
-
-
-
-
 
     return Host;
 
