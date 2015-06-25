@@ -62,6 +62,7 @@
 
 #page-content-wrapper{
   padding: 0;
+  padding-top: 50px;
 
   .container-fluid.main-content{
     padding-left: 0;
@@ -70,36 +71,7 @@
 
 }
 
-#wrapper.toggled #sidebar-wrapper {
 
-
-
-
-
-  .brand-logo{
-
-
-    h4{
-      color: #333;
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      transition: all 0.5s ease;
-    }
-
-    span{
-      color: #333;
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      transition: all 0.5s ease;
-    }
-
-  }
-
-
-
-}
 
 
 
@@ -147,4 +119,125 @@
 
 }
 
+
+#wrapper #sidebar-wrapper {
+
+  .brand-logo{
+    margin-left: 50px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    h4{
+      color: $fenix-text;
+
+    }
+
+    span{
+      color: $fenix-text;
+
+    }
+
+  }
+
+
+
+}
+
+#wrapper.toggled #sidebar-wrapper {
+
+  .brand-logo{
+    margin-left: 0px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    h4{
+      color: white;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+
+    span{
+      color: white;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+
+  }
+
+
+
+}
+
+#wrapper{
+  .open-overlay.page-content-toolbar-btn{
+    left: auto;
+    position: absolute;
+    right: 250px;
+  }
+}
+
+#wrapper.toggled{
+  .open-overlay.page-content-toolbar-btn{
+    left: auto;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media(min-width:768px) {
+
+  #wrapper #sidebar-wrapper {
+
+    .brand-logo{
+      margin-left: 0px;
+
+    }
+
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+
+    .brand-logo{
+      margin-left: 0;
+
+      h4{
+        color: #333;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+      }
+
+      span{
+        color: #333;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+      }
+
+    }
+
+
+
+  }
+
+  #wrapper #sidebar-wrapper {
+    .brand-logo{
+      h4{
+        color: white;
+      }
+      span{
+        color: white;
+      }
+    }
+  }
+}
 

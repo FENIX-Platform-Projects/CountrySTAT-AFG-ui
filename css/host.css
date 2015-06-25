@@ -5203,7 +5203,7 @@ button_new_2:before {
 /* Fenix Typography */
 body {
   color: #333333;
-  font: normal normal 300 14px/normal "Roboto"; }
+  font: normal normal 300 12px/normal "Roboto"; }
 
 a {
   color: #ff8a57; }
@@ -5229,7 +5229,7 @@ h3 {
   color: #d59b81; }
 
 h4 {
-  font: normal normal 500 14px/normal "Roboto Condensed";
+  font: normal normal 500 14px/normal "Roboto";
   color: #c4a192; }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
@@ -5270,7 +5270,7 @@ input[type="button"]::-moz-focus-inner {
   background-color: #ff8a57;
   color: white;
   border-color: transparent;
-  font: normal normal 300 14px/normal "Roboto"; }
+  font: normal normal 300 12px/normal "Roboto"; }
   .btn:hover {
     background-color: transparent;
     color: #ff8a57;
@@ -5287,7 +5287,7 @@ input[type="button"]::-moz-focus-inner {
   background-color: transparent;
   color: #333333;
   border-color: transparent;
-  font: normal normal 300 14px/normal "Roboto"; }
+  font: normal normal 300 12px/normal "Roboto"; }
   .fx-button-reset:hover {
     background-color: transparent;
     color: #333333;
@@ -5443,7 +5443,7 @@ input[type=text]::-ms-clear {
 
 /* Fenix - Labels Component */
 label {
-  font: normal normal 300 14px/normal "Roboto"; }
+  font: normal normal 300 12px/normal "Roboto"; }
 
 /* Fenix - Legend Component */
 legend {
@@ -5584,7 +5584,7 @@ div[data-module="referencePeriod"] .fx-catalog-modular-form-content {
   padding-top: 5px; }
   .obj-box-title h4 {
     color: #ff8a57;
-    font: normal normal 500 14px/normal "Roboto Condensed"; }
+    font: normal normal 500 14px/normal "Roboto"; }
 
 /* Fenix - Panel Component */
 .panel-group {
@@ -5627,7 +5627,7 @@ div[data-module="referencePeriod"] .fx-catalog-modular-form-content {
     background-color: transparent;
     color: #333333;
     border-color: transparent;
-    font: normal normal 300 14px/normal "Roboto";
+    font: normal normal 300 12px/normal "Roboto";
     text-align: left;
     position: relative; }
     .panel-group .panel-body .btn:hover {
@@ -6327,7 +6327,7 @@ input[type="checkbox"]:checked + label {
 
 /* Fenix - JQwidgets */
 .jqx-widget {
-  font: normal normal 300 14px/normal "Roboto"; }
+  font: normal normal 300 12px/normal "Roboto"; }
 
 .jqx-widget-content {
   color: #333333;
@@ -6869,10 +6869,6 @@ input[type="checkbox"]:checked + label {
   background-size: cover;
   background-position: 50% 50%; }
 
-.afg-home-stats {
-  height: 65px;
-  width: 65px; }
-
 .progressbar-text {
   font-family: 'Roboto';
   font-weight: 100;
@@ -6884,6 +6880,211 @@ input[type="checkbox"]:checked + label {
     right: -2px;
     font-size: 16px;
     top: -5px; }
+
+.home-content {
+  background-color: #2f5674; }
+  .home-content .home-tile {
+    padding: 20px 15px;
+    position: relative;
+    min-height: 400px; }
+  .home-content .home-tiles-title {
+    font-size: 33px;
+    color: #333333;
+    margin-top: 10px; }
+  .home-content .country-welcome {
+    padding-bottom: 100px; }
+  .home-content .home-detail-pointer {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #f8f1a9; }
+    .home-content .home-detail-pointer:before {
+      content: '';
+      position: absolute;
+      right: -17px;
+      top: 38px;
+      z-index: 1;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 13.5px 0 13.5px 17px;
+      border-color: transparent transparent transparent #f8f1a9; }
+    .home-content .home-detail-pointer .afg-title {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      -ms-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%); }
+  .home-content .country-details h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: 100;
+    position: absolute;
+    top: 0; }
+  .home-content .country-details .home-stats-footer {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 15px 15px 35px;
+    background-color: rgba(45, 50, 70, 0.5); }
+    .home-content .country-details .home-stats-footer h3 {
+      font-weight: 100;
+      font-size: 20px;
+      color: white;
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .home-content .country-details .home-stats-footer p.subtitle {
+      font-weight: 500;
+      font-size: 10px;
+      color: white;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .home-content .country-details .home-stats-footer .col-xs-2 {
+      padding-top: 12px;
+      position: relative; }
+      .home-content .country-details .home-stats-footer .col-xs-2:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url(img/arrow-right.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 8px;
+        height: 20px;
+        right: 10px; }
+    .home-content .country-details .home-stats-footer .pie-holder {
+      position: relative;
+      padding-left: 90px;
+      padding-top: 12px; }
+      .home-content .country-details .home-stats-footer .pie-holder:before {
+        display: none; }
+    .home-content .country-details .home-stats-footer .afg-home-stats {
+      height: 65px;
+      width: 65px;
+      position: absolute !important;
+      left: 10px;
+      top: 0; }
+
+.partners-holder {
+  background-color: #e0e9f1;
+  min-height: 100px; }
+  .partners-holder h4 {
+    font-size: 14px;
+    color: #abb9c4; }
+  .partners-holder .partner-holder {
+    text-align: center; }
+
+ol {
+  list-style: none;
+  padding-left: 40px;
+  counter-reset: numList; }
+
+ol li {
+  position: relative;
+  margin-bottom: 12px; }
+
+ol li:before {
+  counter-increment: numList;
+  content: counter(numList);
+  color: #c9ddef;
+  font-weight: 700;
+  font-size: 36px;
+  position: absolute;
+  left: -33px;
+  top: 7px;
+  text-align: center;
+  line-height: 19px;
+  width: 20px;
+  height: 20px; }
+
+.home-tile.gray {
+  background-color: #93a0ab;
+  position: relative; }
+  .home-tile.gray .news-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    padding: 15px; }
+  .home-tile.gray h2, .home-tile.gray h4, .home-tile.gray p {
+    color: white !important;
+    border-color: white; }
+  .home-tile.gray p {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 500; }
+  .home-tile.gray .more {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: -15px;
+    border-color: transparent;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 0; }
+  .home-tile.gray .news-image {
+    background-image: url(img/working-group.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 50%;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0; }
+
+.home-tile.map {
+  background-color: #a5bcd0;
+  position: relative;
+  background-image: url("img/home-map.svg");
+  background-size: 570px 371px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+  .home-tile.map:hover {
+    background-size: 1600px 1035px;
+    background-position: 69% 58%;
+    -webkit-transition: all 1s ease 0.2s;
+    -moz-transition: all 1s ease 0.2s;
+    -o-transition: all 1s ease 0.2s;
+    transition: all 1s ease 0.2s; }
+  .home-tile.map .afg-title {
+    position: absolute;
+    background-color: #a5bcd0;
+    top: 16px; }
+  .home-tile.map h3 {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 100;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    right: 15px; }
+
+.home-tile.aims {
+  background-color: white; }
 
 /* Components */
 /* vertical alignment styles */
@@ -6971,22 +7172,10 @@ input[type="checkbox"]:checked + label {
     top: 350px; }
 
 #page-content-wrapper {
-  padding: 0; }
+  padding: 0;
+  padding-top: 50px; }
   #page-content-wrapper .container-fluid.main-content {
     padding-left: 0; }
-
-#wrapper.toggled #sidebar-wrapper .brand-logo h4 {
-  color: #333;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-#wrapper.toggled #sidebar-wrapper .brand-logo span {
-  color: #333;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
 
 #wrapper .page-content-toolbar-btn {
   left: 10px;
@@ -7016,6 +7205,69 @@ input[type="checkbox"]:checked + label {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
+#wrapper #sidebar-wrapper .brand-logo {
+  margin-left: 50px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  #wrapper #sidebar-wrapper .brand-logo h4 {
+    color: #333333; }
+  #wrapper #sidebar-wrapper .brand-logo span {
+    color: #333333; }
+
+#wrapper.toggled #sidebar-wrapper .brand-logo {
+  margin-left: 0px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  #wrapper.toggled #sidebar-wrapper .brand-logo h4 {
+    color: white;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  #wrapper.toggled #sidebar-wrapper .brand-logo span {
+    color: white;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+
+#wrapper .open-overlay.page-content-toolbar-btn {
+  left: auto;
+  position: absolute;
+  right: 250px; }
+
+#wrapper.toggled .open-overlay.page-content-toolbar-btn {
+  left: auto;
+  position: absolute;
+  right: 0; }
+
+@media (min-width: 768px) {
+  #wrapper #sidebar-wrapper .brand-logo {
+    margin-left: 0px; }
+
+  #wrapper.toggled #sidebar-wrapper .brand-logo {
+    margin-left: 0; }
+    #wrapper.toggled #sidebar-wrapper .brand-logo h4 {
+      color: #333;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+    #wrapper.toggled #sidebar-wrapper .brand-logo span {
+      color: #333;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+
+  #wrapper #sidebar-wrapper .brand-logo h4 {
+    color: white; }
+  #wrapper #sidebar-wrapper .brand-logo span {
+    color: white; } }
 /* Base */
 html, body, #wrapper, #page-content-wrapper {
   height: 100%; }
@@ -7028,9 +7280,15 @@ hr {
   border-color: #e5e5e5; }
 
 /* Typography */
-/* Navigation */
-/* There is a big problem with navbar-bran. It is defined in Topmenu.css, which is imported at least in the document.
-Using the normal root/css/host.css, is impossible to override the logo without "!important"*/
+.afg-title {
+  font-family: 'Roboto';
+  font-size: 10px;
+  display: inline-block;
+  padding: 3px;
+  color: #333333;
+  border: 1px solid #333333;
+  margin-bottom: 20px; }
+
 .brand-logo {
   height: 50px;
   position: fixed;
@@ -7111,7 +7369,9 @@ div[data-plugin="filter"] .fx-catalog-modular-form-content {
   height: 50px;
   background-color: white;
   z-index: 501;
-  position: relative; }
+  top: 0;
+  position: fixed;
+  width: 100%; }
   .page-content-toolbar:after {
     content: '';
     background-image: url(img/page-toolbar-shadow.png);
@@ -7185,3 +7445,22 @@ div[data-plugin="filter"] .fx-catalog-modular-form-content {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
+
+.afg-footer {
+  height: 80px;
+  background-color: white; }
+  .afg-footer .afg-footer-text {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 38px; }
+    .afg-footer .afg-footer-text p {
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 10px; }
+    .afg-footer .afg-footer-text p.pull-right {
+      position: relative;
+      top: -28px;
+      right: 26px; }
+      .afg-footer .afg-footer-text p.pull-right img {
+        margin-left: 5px; }
