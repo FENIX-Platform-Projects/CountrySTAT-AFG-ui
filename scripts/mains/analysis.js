@@ -49,7 +49,6 @@ require([
     var filterConfig = Filter;
     filterConfig.baseUrl = '../../submodules/fenix-ui-filter/';
 
-
     Compiler.resolve([catalogConfig, analysisConfig, menuConfig, tableCreatorConfig, chartCreatorConfig, mapCreatorConfig, metadataViewerConfig, faostatCommonsConfig, faostatThemeConfig, fenixCommonConfig, filterConfig], {
         placeholders: {"FENIX_CDN": "//fenixapps.fao.org/repository"},
         config: {
@@ -60,14 +59,12 @@ require([
                 underscore: "{FENIX_CDN}/js/underscore/1.7.0/underscore.min",
                 'packery': '../lib/packery.1.4.1.min',
 
-
                 'host/config' : '../../config/config',
 
                 //Components configuration
                 "fx-cat-br/config/fx-catalog-blank-filter": '../../config/submodules/catalog/blankFilter',
 
-
-                    'fx-ana/config/services' : '../../config/submodules/analysis/services',
+                'fx-ana/config/services' : '../../config/submodules/analysis/services',
                 'fx-filter/config/config-default' : '../../config/submodules/filter/config'
 
             },
