@@ -11,26 +11,28 @@ require([
     '../../submodules/fenix-ui-data-management/src/js/paths'
 ], function (Compiler, DataEditor, DataUpload, DSDEditor, MetadataEditor, Catalog, Menu, DataMng) {
 
+    'use strict';
+
     var dataEditorConfig = DataEditor;
-    dataEditorConfig['baseUrl'] = '../../submodules/fenix-ui-DataEditor/js';
+    dataEditorConfig.baseUrl = '../../submodules/fenix-ui-DataEditor/js';
 
     var dataUploadConfig = DataUpload;
-    dataUploadConfig['baseUrl'] = '../../submodules/fenix-ui-dataUpload/js/';
+    dataUploadConfig.baseUrl = '../../submodules/fenix-ui-dataUpload/js/';
 
     var dsdEditorConfig = DSDEditor;
-    dsdEditorConfig['baseUrl'] = '../../submodules/fenix-ui-DSDEditor/js';
+    dsdEditorConfig.baseUrl = '../../submodules/fenix-ui-DSDEditor/js';
 
     var metadataEditorConfig = MetadataEditor;
-    metadataEditorConfig['baseUrl'] = '../../submodules/fenix-ui-metadata-editor/js/';
+    metadataEditorConfig.baseUrl = '../../submodules/fenix-ui-metadata-editor/js/';
 
     var catalogConfig = Catalog;
-    catalogConfig['baseUrl'] = '../../submodules/fenix-ui-catalog/js/';
+    catalogConfig.baseUrl = '../../submodules/fenix-ui-catalog/js/';
 
     var menuConfig = Menu;
-    menuConfig['baseUrl'] = '../../submodules/fenix-ui-menu/js';
+    menuConfig.baseUrl = '../../submodules/fenix-ui-menu/js';
 
     var dataMngConfig = DataMng;
-    dataMngConfig['baseUrl'] = '../../submodules/fenix-ui-data-management/src/js';
+    dataMngConfig.baseUrl = '../../submodules/fenix-ui-data-management/src/js';
 
     Compiler.resolve([dataEditorConfig, dataUploadConfig, dsdEditorConfig, metadataEditorConfig, catalogConfig, menuConfig, dataMngConfig],
         {
@@ -50,9 +52,13 @@ require([
                     pnotify: '{FENIX_CDN}/js/pnotify/2.0.1/pnotify.custom.min',
 
                     'fx-d-m/config/config': '../../config/submodules/datamng/config',
+
                     'fx-cat-br/config/config': '../../config/submodules/catalog/config',
 
+                    'fx-d-m/templates/site' : '../../submodules/fenix-ui-data-management/src/js/templates/site-sidemenu.hbs',
+
                     'fx-submodules/config/baseConfig': '../../config/submodules/config_base'
+
                 },
 
                 // Underscore and Backbone are not AMD-capable per default,
@@ -86,7 +92,7 @@ require([
         'domReady!'
     ], function (Application, routes) {
 
-        new Application({
+        var app = new Application({
             routes: routes,
             controllerSuffix: '-controller',
             controllerPath: '../../submodules/fenix-ui-data-management/src/js/controllers/',

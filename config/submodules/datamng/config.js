@@ -26,6 +26,9 @@ define(['jquery', 'fx-submodules/config/baseConfig'],
             active: "createdataset"
         };
 
+        cfg.SITE_TEMPLATE = 'topmenu';
+
+
         cfg.DSD_EDITOR_CONTEXT_SYSTEM = "cstat_afg";
         cfg.DSD_EDITOR_DATASOURCES = ["D3S"];
 
