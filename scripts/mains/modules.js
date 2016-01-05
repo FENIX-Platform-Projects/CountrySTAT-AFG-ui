@@ -19,6 +19,8 @@ require([
 
                 // Specify the paths of vendor libraries
                 paths: {
+                    loglevel : "{FENIX_CDN}/js/loglevel/1.4.0/loglevel",
+
                     host: '../modules/host',
                     underscore: "{FENIX_CDN}/js/underscore/1.7.0/underscore.min",
                     handlebars: "{FENIX_CDN}/js/handlebars/2.0.0/handlebars",
@@ -27,7 +29,9 @@ require([
 
                     'host/config' : '../../config/config',
 
-                    'fx-submodules/config/baseConfig': '../../config/submodules/config_base'
+                    'fx-submodules/config/baseConfig': '../../config/submodules/config_base',
+                    'fx-menu/templates': '../../scripts/templates'
+
                 },
 
                 // Underscore and Backbone are not AMD-capable per default,

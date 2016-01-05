@@ -9,31 +9,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description" content="FENIX Analysis Interface">
-    <meta name="author" content="Daniele Salvatore <daniele.salvatore[at]fao.org>">
-    <meta name="author" content="Nicola Selleri <nicola.selleri[at]fao.org>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Third Party CSS -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href='//fenixapps.fao.org/repository/js/jqwidgets/3.1/styles/jqx.base.css'/>
-    <link rel="stylesheet" href='//fenixapps.fao.org/repository/js/pnotify/2.0.1/pnotify.core.css'/>
-    <link rel="stylesheet" href='//fenixapps.fao.org/repository/js/introjs/1.0.0/introjs.css'/>
-    <link rel="stylesheet" href='//fenixapps.fao.org/repository/js/nprogress/0.1.6/nprogress.css'/>
-    <link rel="stylesheet" href='//fenixapps.fao.org/repository/js/jquery.mb.extruder/2.5.5/css/mbExtruder.css'>
-    <link rel="stylesheet" href='//fenixapps.fao.org/repository/js/jstree/3.0.8/dist/themes/default/style.min.css'>
-    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/leaflet/0.7.3/leaflet.css"/>
-    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/jquery.power.tip/1.2.0/css/jquery.powertip.css"
-          type="text/css"/>
-    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/jquery-ui/1.10.3/jquery-ui-1.10.3.custom.min.css"/>
-    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/select2/3.5.2/css/select2.css"/>
-    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/fenix-ui-map/0.0.1/fenix-ui-map.min.css"/>
 
-    <link href='http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/sweetalert/0.5.0/sweet-alert.css' rel='stylesheet'>
+    <!-- Third Party CSS -->
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/jqwidgets/3.8.2/styles/jqx.base.css'/>
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/pnotify/2.0.1/pnotify.custom.min.css'/>
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/introjs/1.0.0/introjs.css'/>
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/nprogress/0.1.6/nprogress.css'/>
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/jquery.mb.extruder/2.5.5/css/mbExtruder.css'>
+    <link rel="stylesheet" href='//fenixrepo.fao.org/cdn/js/jstree/3.0.8/dist/themes/default/style.min.css'>
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/leaflet/0.7.3/leaflet.css"/>
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/jquery.power.tip/1.2.0/css/jquery.powertip.css"/>
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/jquery-ui/1.10.3/jquery-ui-1.10.3.custom.min.css"/>
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/select2/3.5.2/css/select2.css"/>
+    <link rel='stylesheet' href='//fenixrepo.fao.org/cdn/js/font-awesome-4.2.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="//fenixapps.fao.org/repository/js/fenix-ui-map/0.0.1/fenix-ui-map.min.css"/>
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/jquery-treegrid/0.3.0/css/jquery.treegrid.css">
 
     <!--&lt;!&ndash; FENIX CSS&ndash;&gt;-->
     <!--<link rel="stylesheet" href="submodules/fenix-ui-common/css/fenix-style.css">-->
     <link rel="stylesheet" href='submodules/fenix-ui-catalog/css/fenix-ui-catalog.css'/>
+    <!--<link rel="stylesheet" href='submodules/fenix-ui-analysis/css/host.css'/>-->
+
+
+    <!-- FENIX CSS -->
+    <link rel="stylesheet" href="//fenixrepo.fao.org/cdn/js/fenix-ui-map/0.0.1/fenix-ui-map.min.css"/>
     <!--<link rel="stylesheet" href='submodules/fenix-ui-analysis/css/host.css'/>-->
 
     <link rel="stylesheet" href='css/host.css'/>
@@ -60,6 +62,30 @@
                 <div id="fx-catalog-container"></div>
             </div>
         </div>
+
+
+        <!-- modal to show metadata -->
+        <div id="cstat-metadata-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Metadata Viewer</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div data-content="metadata-viewer-container"></div>
+                    </div>
+                    <div class="modal-footer">
+                        FENIX Metadata
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
 
 
         <div class="page-content-toolbar">
@@ -109,7 +135,7 @@
                         <footer>
                             <p class="pull-right"><a href="#">Back to top</a></p>
 
-                            <p>2015 FENIX · <a href="#">Terms</a></p>
+                            <p>2016 FENIX · <a href="#">Terms</a></p>
                         </footer>
 
                     </div>

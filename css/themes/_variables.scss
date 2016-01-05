@@ -1,6 +1,8 @@
 // Uneca - Variables
 
-$fx-ui-common: '../submodules/fenix-ui-common/css/';
+$fx-ui-common: '../submodules/fenix-ui-common';
+
+
 
 // Layout
 $host-menu-height : 0;
@@ -31,6 +33,7 @@ $fx-main-color-lighter: lighten( $fx-cool-blue, 20%); // Ideal for hovers
 
 $fenix-text: #333 ;
 $fenix-secondary-text: #999999;
+$superlight-gray: #dddddd;
 
 $fenix-light-gray: #dddddd;
 $fenix-superlight-gray: #dddddd;

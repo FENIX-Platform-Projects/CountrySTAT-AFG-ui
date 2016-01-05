@@ -59,9 +59,11 @@ require([
 
                     'fx-cat-br/config/config': '../../config/submodules/catalog/config',
 
-                    'fx-d-m/templates/site' : '../../submodules/fenix-ui-data-management/src/js/templates/site-sidemenu.hbs',
+                    'fx-d-m/templates/site' : '../../scripts/templates/site-sidemenu.hbs',
 
-                    'fx-submodules/config/baseConfig': '../../config/submodules/config_base'
+                    'fx-submodules/config/baseConfig': '../../config/submodules/config_base',
+                    'fx-menu/templates': '../../scripts/templates'
+
 
                 },
 
