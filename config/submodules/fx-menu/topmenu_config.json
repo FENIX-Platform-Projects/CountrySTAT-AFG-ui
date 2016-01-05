@@ -1,46 +1,46 @@
 {
   "items": [
-  {
-    "attrs": {
-      "id": "home"
+    {
+      "attrs": {
+        "id": "home"
+      },
+      "target": "index.html",
+      "label": {
+        "EN": "Home",
+        "FR": "Accueil"
+      }
     },
-    "target": "index.html",
-    "label": {
-      "EN": "Home",
-      "FR": "PI"
-    }
-  },
-  {
-    "attrs": {
-      "id": "analysis"
+    {
+      "attrs": {
+        "id": "analysis"
+      },
+      "target": "analysis.html",
+      "label": {
+        "EN": "Search and Visualize",
+        "FR": "Rechercher et visualiser"
+      }
     },
-    "target": "analysis.html",
-    "label": {
-      "EN": "Search and Visualize",
-      "FR": "PI"
-    }
-  },
-  {
-    "attrs": {
-      "id": "createdataset"
+    {
+      "attrs": {
+        "id": "createdataset"
+      },
+      "target": "createdataset.html",
+      "label": {
+        "EN": "Data Management",
+        "FR": "Gestion des données"
+      }
     },
-    "target": "createdataset.html",
-    "label": {
-      "EN": "Data Management",
-      "FR": "PI"
+    {
+      "attrs": {
+        "id": "modules"
+      },
+      "target": "modules.html",
+      "label": {
+        "EN": "Thematic modules",
+        "FR": "Modules thématiques"
+      }
     }
-  },
-  {
-    "attrs": {
-      "id": "modules"
-    },
-    "target": "modules.html",
-    "label": {
-      "EN": "Thematic modules",
-      "FR": "PI"
-    }
-  }
-],
+  ],
   "rightItems": [
     {
       "attrs": {
@@ -49,7 +49,7 @@
       "target": "#",
       "label": {
         "EN": "Key indicators",
-        "FR": "PI"
+        "FR": "Indicateurs clefs"
       }
     },
     {
@@ -59,7 +59,7 @@
       "target": "#",
       "label": {
         "EN": "News",
-        "FR": "PI"
+        "FR": "Nouvelles"
       }
     },
     {
@@ -69,7 +69,7 @@
       "target": "#",
       "label": {
         "EN": "Documents",
-        "FR": "PI"
+        "FR": "Documents"
       }
     },
     {
@@ -79,7 +79,26 @@
       "target": "#",
       "label": {
         "EN": "Links",
-        "FR": "PI"
+        "FR": "Liens"
+      }
+    },
+    {
+      "attrs": {
+        "id": "login"
+      },
+      "label": {
+        "EN": "LOGIN",
+        "FR": "LOGIN"
+      }
+    },
+    {
+      "attrs": {
+        "id": "logout"
+      },
+      "label": {
+        "EN": "LOGOUT",
+        "FR": "LOGOUT"
+
       }
     }
   ],

@@ -8,7 +8,9 @@
   }
 }
 
-.uneca-datamng-welcome{
+
+
+.datamng-welcome{
   text-align: center;
   width: 350px;
   background-color: white;
@@ -24,7 +26,7 @@
     font-size: 22px;
   }
 
-  .uneca-datamng-welcome-btn{
+  .datamng-welcome-btn{
     display: inline-block;
     width: 75px;
     height: 75px;
@@ -34,8 +36,6 @@
     @include fx-border-radius(3px);
     @include animate;
     margin: 5px;
-
-
 
     &:hover{
       border-color:$fx-cool-blue;
@@ -117,4 +117,15 @@
     }
   }
 
+}
+
+.datamng-btn{
+  font-size: 35px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+
+.datamng-container{
+  padding: 0;
 }

@@ -48,7 +48,7 @@ define([
 
     Host.prototype.initFenixComponent = function () {
 
-        var self  =this;
+        var self  = this;
 
         this.$modalMetadata = $(s.MODAL_METADATA);
 
@@ -206,8 +206,6 @@ define([
 
 
     Host.prototype.onDownloadClick = function (model) {
-
-        debugger;
 
         var payload = {
             input:{

@@ -54,15 +54,19 @@ require([
                     amplify: '{FENIX_CDN}/js/amplify/1.1.2/amplify.min',
                     rsvp: '{FENIX_CDN}/js/rsvp/3.0.17/rsvp',
                     pnotify: '{FENIX_CDN}/js/pnotify/2.0.1/pnotify.custom.min',
-
-                    'fx-d-m/config/config': '../../config/submodules/datamng/config',
-
-                    'fx-cat-br/config/config': '../../config/submodules/catalog/config',
+                    'bootstrap-datetimepicker': "{FENIX_CDN}/js/bootstrap-datetimepicker/3.1.3/bootstrap-datetimepicker",
 
                     'fx-d-m/templates/site' : '../../scripts/templates/site-sidemenu.hbs',
 
-                    'fx-submodules/config/baseConfig': '../../config/submodules/config_base',
-                    'fx-menu/templates': '../../scripts/templates'
+                    'fx-menu/templates': '../../scripts/templates',
+
+
+                    'fx-d-m/config/config': '../../config/submodules/datamng/config',
+
+                    'fx-cat-br/config/config': '../../config/submodules/fx-catalog/config',
+
+
+                    'fx-submodules/config/baseConfig': '../../config/submodules/config_base'
 
 
                 },
@@ -95,15 +99,24 @@ require([
     require([
         'fx-d-m/start',
         'fx-d-m/routes',
+        'fx-common/AuthManager',
         'domReady!'
-    ], function (Application, routes) {
+    ], function (Application, routes,  AuthManager) {
 
-        var app = new Application({
-            routes: routes,
-            controllerSuffix: '-controller',
-            controllerPath: '../../submodules/fenix-ui-data-management/src/js/controllers/',
-            root: '/fenix/',
-            pushState: false
-        });
+
+        var authMAnager = new AuthManager();
+        if(authMAnager.isLogged()) {
+
+            var app = new Application({
+                routes: routes,
+                controllerSuffix: '-controller',
+                controllerPath: '../../submodules/fenix-ui-data-management/src/js/controllers/',
+                root: '/fenix/',
+                pushState: false
+            });
+        }
+        else {
+            window.location.replace("./index.html");
+        }
     });
 });

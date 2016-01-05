@@ -2,15 +2,20 @@
 // relative or absolute path of Components' main.js
 require([
     '../../submodules/fenix-ui-common/js/Compiler',
-    '../../submodules/fenix-ui-menu/js/paths'
-], function (Compiler, Menu) {
+    '../../submodules/fenix-ui-menu/js/paths',
+    '../../submodules/fenix-ui-common/js/paths'
+
+], function (Compiler, Menu, Common) {
 
     'use strict';
 
     var menuConfig = Menu;
     menuConfig.baseUrl = '../../submodules/fenix-ui-menu/js';
 
-    Compiler.resolve([menuConfig],
+    var commonConfig = Common;
+    commonConfig.baseUrl = '../../submodules/fenix-ui-common/js';
+
+    Compiler.resolve([menuConfig, commonConfig],
         {
             placeholders: { "FENIX_CDN": "//fenixapps.fao.org/repository" },
             config: {
@@ -29,9 +34,9 @@ require([
                     progressbar : '{FENIX_CDN}/js/progressbar/0.8.1/progressbar.min',
 
                     'host/config' : '../../config/config',
+                    'fx-menu/templates': '../../scripts/templates',
 
-                    'fx-submodules/config/baseConfig': '../../config/submodules/config_base',
-                    'fx-menu/templates': '../../scripts/templates'
+                    'fx-submodules/config/baseConfig': '../../config/submodules/config_base'
 
                 },
 
