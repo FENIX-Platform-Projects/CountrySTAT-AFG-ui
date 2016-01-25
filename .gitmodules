@@ -43,9 +43,6 @@
 [submodule "submodules/fenix-ui-metadata-viewer"]
 	path = submodules/fenix-ui-metadata-viewer
 	url = https://github.com/FENIX-Platform/fenix-ui-metadata-viewer
-[submodule "submodules/faostat-ui-commons"]
-	path = submodules/faostat-ui-commons
-	url = https://github.com/FAOSTAT4/faostat-ui-commons
 [submodule "submodules/fenix-ui-reports"]
 	path = submodules/fenix-ui-reports
 	url = https://github.com/FENIX-Platform/fenix-ui-reports.git
