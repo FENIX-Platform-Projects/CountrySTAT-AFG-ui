@@ -2,15 +2,20 @@
 // relative or absolute path of Components' main.js
 require([
     '../../submodules/fenix-ui-common/js/Compiler',
-    '../../submodules/fenix-ui-menu/js/paths'
-], function (Compiler, Menu) {
+    '../../submodules/fenix-ui-menu/js/paths',
+    '../../submodules/fenix-ui-common/js/paths'
+
+], function (Compiler, Menu, Common) {
 
     'use strict';
 
     var menuConfig = Menu;
     menuConfig.baseUrl = '../../submodules/fenix-ui-menu/js';
 
-    Compiler.resolve([menuConfig],
+    var commonConfig = Common;
+    commonConfig.baseUrl = '../../submodules/fenix-ui-common/js';
+
+    Compiler.resolve([menuConfig, commonConfig],
         {
             placeholders: { "FENIX_CDN": "//fenixapps.fao.org/repository" },
             config: {
@@ -19,6 +24,8 @@ require([
 
                 // Specify the paths of vendor libraries
                 paths: {
+                    loglevel : "{FENIX_CDN}/js/loglevel/1.4.0/loglevel",
+
                     host: '../index/host',
                     underscore: "{FENIX_CDN}/js/underscore/1.7.0/underscore.min",
                     handlebars: "{FENIX_CDN}/js/handlebars/2.0.0/handlebars",
@@ -27,8 +34,10 @@ require([
                     progressbar : '{FENIX_CDN}/js/progressbar/0.8.1/progressbar.min',
 
                     'host/config' : '../../config/config',
+                    'fx-menu/templates': '../../scripts/templates',
 
                     'fx-submodules/config/baseConfig': '../../config/submodules/config_base'
+
                 },
 
                 // Underscore and Backbone are not AMD-capable per default,
