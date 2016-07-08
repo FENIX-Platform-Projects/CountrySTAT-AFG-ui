@@ -7,7 +7,7 @@ define([
     'progressbar',
     'fx-common/AuthManager',
     'amplify'
-], function ($,_, TopMenu, C, ProgressBar, AuthManager) {
+], function ($, _,TopMenu, C, ProgressBar, AuthManager) {
 
     'use strict';
 
@@ -21,8 +21,8 @@ define([
 
     Host.prototype.initFenixComponent = function () {
 
-        var self = this;
 
+        var self = this;
         this.initPageStructure();
 
         var menuConf = {
@@ -36,8 +36,8 @@ define([
         var menuConfAuth = _.extend({}, menuConf, {
             hiddens: ['login']
         }), menuConfPub = _.extend({}, menuConf, {
-            hiddens: ['createdataset',  'logout']
-        });
+                hiddens: ['createdataset',  'logout']
+            });
 
 
         this.authManager = new AuthManager({
@@ -54,7 +54,6 @@ define([
         });
 
         this.topMenu = new TopMenu(this.authManager.isLogged() ? menuConfAuth : menuConfPub);
-
     };
 
     Host.prototype.initPageStructure = function () {
@@ -71,7 +70,7 @@ define([
     Host.prototype.initPercentageAnimations = function () {
 
         var c ={
-            color: '#f0e352',
+            color: '#db514b',
             strokeWidth: 10,
             trailWidth: 9,
             trailColor: "rgba(255,255,255,0.2)",
@@ -87,13 +86,15 @@ define([
 
         var circle = new ProgressBar.Circle(s.PERCENTAGE_ONE, c);
 
-        circle.animate(0.58);
+        circle.animate(0.09);
 
         var circle_two = new ProgressBar.Circle(s.PERCENTAGE_TWO, c);
 
-        circle_two.animate(0.42);
+        circle_two.animate(0.91);
 
     };
+
+
 
     return Host;
 

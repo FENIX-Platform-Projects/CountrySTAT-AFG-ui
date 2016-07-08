@@ -4,11 +4,41 @@ define(function () {
     'use strict';
 
     return {
-        TOP_MENU: './config/submodules/fx-menu/topmenu_config.json',
-        CATALOG_BLANK_FILTER : './config/submodules/catalog/afg-catalog-blank-filter.json',
-      //  MD_EXPORT_URL : 'http://fenixapps2.fao.org/fenixExport',
-        MD_EXPORT_URL : 'http://fenix.fao.org/d3s',
-        DATA_ENVIROMENT_URL : 'http://fenix.fao.org'
+        TOP_MENU: '../../../config/submodules/fx-menu/topmenu_config.json',
+        MD_EXPORT_URL: 'http://fenixservices.fao.org/d3s',
+        DATA_ENVIROMENT_URL: 'http://fenixservices.fao.org',
+
+        //all components
+        cache : false,
+        environment: "production",
+
+        //Analysis
+        catalog : {
+            selectorsRegistry: {
+                contextSystem: {
+                    selector: {
+                        source: [
+                            {value: "cstat_afg", label: "CountrySTAT Afghanistan"}
+                        ],
+                        default: ["cstat_afg"]
+                    }
+                },
+                dataDomain: {
+                    cl : {
+                        uid: "CountrySTAT_Indicators",
+                        level : 1,
+                        levels : 1
+                    }
+                }
+            },
+            baseFilter: {
+                "dsd.contextSystem": {"enumeration": ["cstat_afg"]},
+                "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
+            },
+            defaultSelectors: ["referenceArea", "dataDomain"],
+            menuExcludedItems : ["accessibility"]
+
+        },
 
     };
 

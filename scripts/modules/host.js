@@ -15,10 +15,9 @@ define([
 
     Host.prototype.initFenixComponent = function () {
 
-        var self  = this;
+        var self = this;
 
         this.initPageStructure();
-
 
         var menuConf  ={
             url: C.TOP_MENU,
@@ -49,13 +48,11 @@ define([
 
         this.topMenu = new TopMenu(this.authManager.isLogged() ? menuConfAuth : menuConfPub);
 
-
     };
 
     Host.prototype.initPageStructure = function () {
 
-
-        <!-- Menu Toggle Script -->
+        // Menu Toggle Script
 
         $("#menu-toggle").click(function(e) {
             e.preventDefault();

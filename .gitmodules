@@ -46,3 +46,15 @@
 [submodule "submodules/fenix-ui-reports"]
 	path = submodules/fenix-ui-reports
 	url = https://github.com/FENIX-Platform/fenix-ui-reports.git
+[submodule "submodules/fenix-ui-visualization-box"]
+	path = submodules/fenix-ui-visualization-box
+	url = https://github.com/FENIX-Platform/fenix-ui-visualization-box
+[submodule "submodules/fenix-ui-datamanagement-commons"]
+	path = submodules/fenix-ui-datamanagement-commons
+	url = https://github.com/FENIX-Platform/fenix-ui-datamanagement-commons
+[submodule "submodules/fenix-ui-dashboard"]
+	path = submodules/fenix-ui-dashboard
+	url = https://github.com/FENIX-Platform/fenix-ui-dashboard
+[submodule "submodules/fenix-ui-map"]
+	path = submodules/fenix-ui-map
+	url = https://github.com/FENIX-Platform/fenix-ui-map

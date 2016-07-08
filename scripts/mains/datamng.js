@@ -3,22 +3,23 @@
 require([
     '../../submodules/fenix-ui-common/js/Compiler',
     '../../submodules/fenix-ui-common/js/paths',
+    '../../submodules/fenix-ui-datamanagement-commons/js/paths',
     '../../submodules/fenix-ui-DataEditor/js/paths',
-    '../../submodules/fenix-ui-dataUpload/js/paths',
     '../../submodules/fenix-ui-DSDEditor/js/paths',
     '../../submodules/fenix-ui-metadata-editor/js/paths',
-    '../../submodules/fenix-ui-catalog/js/paths',
-    '../../submodules/fenix-ui-menu/js/paths',
-    '../../submodules/fenix-ui-data-management/src/js/paths'
-], function (Compiler, FenixCommons, DataEditor, DataUpload, DSDEditor, MetadataEditor, Catalog, Menu, DataMng) {
+    '../../submodules/fenix-ui-catalog/src/js/paths',
+    '../../submodules/fenix-ui-menu/src/js/paths',
+    '../../submodules/fenix-ui-data-management/src/js/paths',
+    '../../submodules/fenix-ui-filter/src/js/paths'
+], function (Compiler, FenixCommons, DataMngCommons, DataEditor, DSDEditor, MetadataEditor, Catalog, Menu, DataMng, Filter) {
 
     'use strict';
 
     var dataEditorConfig = DataEditor;
     dataEditorConfig.baseUrl = '../../submodules/fenix-ui-DataEditor/js';
 
-    var dataUploadConfig = DataUpload;
-    dataUploadConfig.baseUrl = '../../submodules/fenix-ui-dataUpload/js/';
+    var dataMngCommonsConfig = DataMngCommons;
+    dataMngCommonsConfig['baseUrl'] = '../../submodules/fenix-ui-datamanagement-commons/js';
 
     var dsdEditorConfig = DSDEditor;
     dsdEditorConfig.baseUrl = '../../submodules/fenix-ui-DSDEditor/js';
@@ -27,10 +28,10 @@ require([
     metadataEditorConfig.baseUrl = '../../submodules/fenix-ui-metadata-editor/js/';
 
     var catalogConfig = Catalog;
-    catalogConfig.baseUrl = '../../submodules/fenix-ui-catalog/js/';
+    catalogConfig.baseUrl = '../../submodules/fenix-ui-catalog/src/js/';
 
     var menuConfig = Menu;
-    menuConfig.baseUrl = '../../submodules/fenix-ui-menu/js';
+    menuConfig.baseUrl = '../../submodules/fenix-ui-menu/src/js';
 
     var dataMngConfig = DataMng;
     dataMngConfig.baseUrl = '../../submodules/fenix-ui-data-management/src/js';
@@ -38,10 +39,14 @@ require([
     var fenixCommonConfig = FenixCommons;
     fenixCommonConfig.baseUrl = '../../submodules/fenix-ui-common/js';
 
-    Compiler.resolve([dataEditorConfig, dataUploadConfig, dsdEditorConfig, metadataEditorConfig, catalogConfig, menuConfig, dataMngConfig, fenixCommonConfig],
+    var filterConfig = Filter;
+    filterConfig.baseUrl = '../../submodules/fenix-ui-filter/src/js/';
+
+    Compiler.resolve([dataEditorConfig, dataMngCommonsConfig, dsdEditorConfig, metadataEditorConfig, catalogConfig, menuConfig, dataMngConfig, fenixCommonConfig, filterConfig],
         {
-            placeholders: { "FENIX_CDN": "//fenixapps.fao.org/repository" },
+            placeholders: {"FENIX_CDN": "//fenixrepo.fao.org/cdn"},
             config: {
+                waitSeconds : 30,
 
                 locale: 'en',
 
@@ -49,25 +54,33 @@ require([
                 paths: {
                     underscore: "{FENIX_CDN}/js/underscore/1.7.0/underscore.min",
                     backbone: "{FENIX_CDN}/js/backbone/1.1.2/backbone.min",
-                    handlebars: "{FENIX_CDN}/js/handlebars/2.0.0/handlebars",
+                    //handlebars: "{FENIX_CDN}/js/handlebars/2.0.0/handlebars",
+                    //MOVE ON THE CDN!!!
+                    handlebars: "../../submodules/fenix-ui-metadata-editor/lib/handlebars",
                     chaplin: "{FENIX_CDN}/js/chaplin/1.0.1/chaplin.min",
                     amplify: '{FENIX_CDN}/js/amplify/1.1.2/amplify.min',
                     rsvp: '{FENIX_CDN}/js/rsvp/3.0.17/rsvp',
-                    pnotify: '{FENIX_CDN}/js/pnotify/2.0.1/pnotify.custom.min',
                     'bootstrap-datetimepicker': "{FENIX_CDN}/js/bootstrap-datetimepicker/3.1.3/bootstrap-datetimepicker",
+                    'packery': '{FENIX_CDN}/js/packery/1.4.3/dist/packery.pkgd.min',
 
+                    //'fx-menu/templates': '../../scripts/templates',
                     'fx-d-m/templates/site' : '../../scripts/templates/site-sidemenu.hbs',
 
+                    pnotify: '{FENIX_CDN}/js/pnotify/2.0.1/pnotify.custom.min',
                     'fx-menu/templates': '../../scripts/templates',
 
+                    'fx-common/config/auth_users': "../../config/auth_users.json",
+
+                    'config' : '../../config',
 
                     'fx-d-m/config/config': '../../config/submodules/datamng/config',
+                    //'fx-catalog/config/config': '../../config/submodules/catalog/config',
 
-                    'fx-cat-br/config/config': '../../config/submodules/fx-catalog/config',
-
+                    /*
+                     'fx-d-m/templates/site' : '../../submodules/fenix-ui-data-management/src/js/templates/site-sidemenu.hbs',
+                     */
 
                     'fx-submodules/config/baseConfig': '../../config/submodules/config_base'
-
 
                 },
 
@@ -99,13 +112,13 @@ require([
     require([
         'fx-d-m/start',
         'fx-d-m/routes',
-        'fx-common/AuthManager',
-        'domReady!'
-    ], function (Application, routes,  AuthManager) {
+        'fx-common/AuthManager'
+    ], function (Application, routes, AuthManager) {
 
 
         var authMAnager = new AuthManager();
         if(authMAnager.isLogged()) {
+
 
             var app = new Application({
                 routes: routes,
@@ -114,8 +127,7 @@ require([
                 root: '/fenix/',
                 pushState: false
             });
-        }
-        else {
+        }else{
             window.location.replace("./index.html");
         }
     });

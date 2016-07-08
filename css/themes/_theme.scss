@@ -21,9 +21,84 @@ hr{
 }
 
 /* Typography */
-h1, h2, h3, h4{
+/* Fenix Typography */
+
+body{
+  color: $fenix-text;
+  font: $standard-text;
+}
+
+a{
+  color: $fx-cool-blue;
+
+  &:focus{
+    outline: none;
+  }
+
+  &:active{
+    outline: none;
+  }
 
 }
+
+.dropdown-menu > li > a{
+  font-weight: 300;
+  color:$fenix-text;
+}
+
+h1{
+  font: $fx-text-h1;
+  color: $fx-cool-blue;
+}
+
+h2{
+  font: $fx-text-h2;
+  color: desaturate( $fx-cool-blue, 30% );
+}
+
+h3{
+  font: $fx-text-h3;
+  color: desaturate( $fx-cool-blue, 50% );
+}
+
+h4{
+  font: $fx-text-h4;
+  color: desaturate( $fx-cool-blue, 70% );
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small{
+  font-family: Roboto;
+  font-weight: 700;
+  color: $fx-cool-blue;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+
+
+
+.btn-primary {
+  color: white;
+  border-color: darken($fx-cool-blue, 10%);
+  background-color: $fx-cool-blue;
+
+  &:hover {
+    color: white;
+    border-color: darken($fx-cool-blue, 10%);
+    background-color: darken($fx-cool-blue, 5%);
+  }
+
+  &:focus {
+    color: white;
+    border-color: darken($fx-cool-blue, 20%);
+    background-color: darken($fx-cool-blue, 15%);
+  }
+
+}
+
+
+
+
 
 .afg-title{
   font-family: 'Roboto';
@@ -56,25 +131,33 @@ h1, h2, h3, h4{
   }
 
   h4{
-    font-size: 10px;
+    font-size: 15px;
     color: #FFF;
     font-family: 'Roboto';
     font-weight: 500;
+    position: relative;
+    width: 50%;
+    display: inline-block;
     margin-bottom: 0;
     margin-top: 5px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    top: -7px;
+
   }
 
   span{
-    font-size: 8px;
+    width: 60%;
+    display: inline-block;
+    position: relative;
+    font-size: 11px;
     color: #FFF;
     font-family: 'Roboto';
     font-weight: 300;
     position: relative;
-    top: -7px;
+    top: -9px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -193,7 +276,6 @@ h1, h2, h3, h4{
   height: 100%;
   overflow-x: hidden;
   z-index: 500;
-  padding-top: 50px;
   overflow-y: scroll;
   background-color: rgba(0,0,0,0);
   opacity: 0;
@@ -203,6 +285,7 @@ h1, h2, h3, h4{
     width: 85%;
     left: 50%;
     position: relative;
+
 
     @include fx-transfor-me(translate(-50%,-100%));
 

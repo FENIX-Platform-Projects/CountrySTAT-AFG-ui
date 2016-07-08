@@ -6,15 +6,15 @@ define(function () {
     return {
 
         WHITELIST: {
-            /* 'uid': true,
+           /* 'uid': true,
 
              "abstract": true,
              "organization": true,
              "organizationUnit": true,
              "position": true,
              "role": true,
-             seSecondaryDataCollection : true,
-             organization : true*/
+            seSecondaryDataCollection : true,
+            organization : true*/
         },
 
         HAS_EXPORT : true

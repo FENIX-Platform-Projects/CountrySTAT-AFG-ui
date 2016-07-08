@@ -3,12 +3,12 @@
 
 .country-welcome{
   background-color: $afg-yellow;
-
 }
 
 .country-details{
-  background-image: url(img/afg-home-bg.jpg);
+  background-image: url(img/mdg-home.jpg);
   background-size: cover;
+
   background-position: 50% 50%;
 }
 
@@ -96,6 +96,7 @@ background-color: $afg-home-background;
       font-weight: 100;
       position: absolute;
       top: 0;
+      padding: 0 0 0 90px;
     }
 
 
@@ -183,7 +184,7 @@ background-color: $afg-home-background;
 }
 
 .partners-holder{
-  background-color: $afg-light-blue-bg;
+  background-color: #e0f1ee;
   min-height: 100px;
 
   h4{
@@ -244,6 +245,10 @@ ol li:before {
     padding: 15px;
   }
 
+  h4{
+    margin-bottom: 0;
+  }
+
   h2, h4, p{
     color: white !important;
     border-color: white;
@@ -274,7 +279,7 @@ ol li:before {
   }
 
   .news-image{
-    background-image: url(img/working-group.jpg);
+    background-image: url(img/mdg-working-group.jpg);
     background-size: cover;
     background-position: 50% 50%;
     height: 50%;
@@ -284,12 +289,13 @@ ol li:before {
     left: 0;
   }
 
+
 }
 
 .home-tile.map{
   background-color: $afg-map-tile;
   position: relative;
-  background-image: url("img/home-map.svg");
+  background-image: url("img/home-map-mdg.svg");
   background-size: 570px 371px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -298,9 +304,11 @@ ol li:before {
   -o-transition: all 1s ease;
   transition: all 1s ease;
 
+
+
   &:hover{
     background-size: 1600px 1035px;
-    background-position: 69% 58%;
+    background-position: 63% 94%;
     -webkit-transition: all 1s ease 0.2s;
     -moz-transition: all 1s ease 0.2s;
     -o-transition: all 1s ease 0.2s;
@@ -332,4 +340,11 @@ ol li:before {
 .home-tile.aims{
   background-color: white;
 
+}
+.country-flag{
+  width: auto;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 10px;
 }

@@ -46,7 +46,7 @@
       "attrs": {
         "id": "keys"
       },
-      "target": "#",
+      "target": "keyindicators.html",
       "label": {
         "EN": "Key indicators",
         "FR": "Indicateurs clefs"
