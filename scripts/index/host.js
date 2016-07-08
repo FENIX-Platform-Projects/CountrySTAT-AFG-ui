@@ -70,7 +70,7 @@ define([
     Host.prototype.initPercentageAnimations = function () {
 
         var c ={
-            color: '#db514b',
+            color: '#f0e352',
             strokeWidth: 10,
             trailWidth: 9,
             trailColor: "rgba(255,255,255,0.2)",
@@ -86,11 +86,11 @@ define([
 
         var circle = new ProgressBar.Circle(s.PERCENTAGE_ONE, c);
 
-        circle.animate(0.09);
+        circle.animate(0.58);
 
         var circle_two = new ProgressBar.Circle(s.PERCENTAGE_TWO, c);
 
-        circle_two.animate(0.91);
+        circle_two.animate(0.42);
 
     };
 
