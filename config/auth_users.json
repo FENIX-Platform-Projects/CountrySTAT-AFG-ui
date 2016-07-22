@@ -1,4 +1,20 @@
 {
+  "user1@fao.org" : {
+    "name" : "User 1",
+    "password" : "cstat"
+  },
+  "user2@fao.org" : {
+    "name" : "User 2",
+    "password" : "cstat"
+  },
+  "user3@fao.org" : {
+    "name" : "User 3",
+    "password" : "cstat"
+  },
+  "user4@fao.org" : {
+    "name" : "User 4",
+    "password" : "cstat"
+  },
   "guest@fao.org" : {
     "name" : "Guest",
     "password" : "guest"
