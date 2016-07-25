@@ -14,7 +14,7 @@ define(function () {
 
         //Analysis
         catalog : {
-            selectorsRegistry: {
+            pluginRegistry: {
                 contextSystem: {
                     selector: {
                         source: [
